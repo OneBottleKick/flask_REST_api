@@ -1,6 +1,9 @@
 import os
 import unittest
 
+import werkzeug
+werkzeug.cached_property = werkzeug.utils.cached_property
+
 from flask_migrate import Migrate, MigrateCommand
 from flask_script import Manager
 
